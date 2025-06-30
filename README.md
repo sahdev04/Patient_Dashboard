@@ -20,20 +20,43 @@
 
 ## 📁 Folder Structure
 
-Patient360/
-│
-├── frontend/ # Expo mobile app
-│ ├── api/ # Axios API config
-│ ├── store/ # Zustand auth store
-│ ├── components/ # UI components (cards etc.)
-│ └── app/ # Screens (login, dashboard)
-│
-├── backend/ # Node.js + Express backend
-│ ├── server.js # API server
-│ └── data.js # Static mock data
-│
-├── eas.json # EAS Build configuration
-└── README.md # This file
+PATIENT_DASHBOARD/
+├── backend/
+│   ├── node_modules/
+│   ├── data.js
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+├── frontend/
+│   ├── .vscode/
+│   ├── api/
+│   ├── app/
+│   ├── assets/
+│   ├── components/
+│   │   ├── PatientInfoCard.js
+│   │   └── ShipmentItem.js
+│   ├── constants/
+│   │   └── colors.js
+│   ├── hooks/
+│   ├── scripts/
+│   │   └── reset-project.js
+│   ├── store/
+│   │   └── authStore.js
+│   ├── styles/
+│   │   ├── colors.js
+│   │   ├── globalStyles.js
+│   │   ├── loginStyles.js
+│   │   ├── patientCardStyles.js
+│   │   └── shipmentCardStyles.js
+│   ├── .gitignore
+│   ├── app.json
+│   ├── eslint.config.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── README.md
+│   └── tsconfig.json
+└── README.md
+
 
 ## 🔧 Setup Instructions
 
@@ -47,7 +70,7 @@ cd Patient360
 
 cd backend
 npm install
-node index.js
+node server.js
 
 3. Setup Frontend (React Native App)
 
@@ -57,7 +80,7 @@ npx expo start
 
 Update API Base URL
 Open frontend/api/apiClient.js and replace:
-const baseURL = 'https://your-backend-host.onrender.com';
+const baseURL = '(https://patient-backend-j5kv.onrender.com)';
 
 🚀 Production Deployment Plan via Expo EAS
 📦 EAS Build Profiles (eas.json)
@@ -114,10 +137,9 @@ jobs:
 
 🎥 Demo Video: Watch Here
 
-🎨 Figma Design: View on Figma
+🎨 Figma Design: (https://www.figma.com/design/BojIzbTWnEBZ4SKs0pNpyA/PATIENT-DASHBOARD?node-id=0-1&p=f&t=XZUiToREG4nN7ntS-0)
 
 
 🙌 Author
 Developed with 💙 by Sahdev Patel
-If you liked it, don't forget to ⭐ the repo!
 
